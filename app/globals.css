@@ -24,19 +24,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 100%;
-}
-
-canvas {
-  background: transparent !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1; /* para que esté detrás del contenido */
-  display: block;
-}

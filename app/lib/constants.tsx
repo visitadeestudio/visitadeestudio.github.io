@@ -1,11 +1,19 @@
-import { Section } from "./types"
-
-export const Sections: Section[] = [
-    // {
-    //     label: 'about',
-    //     route: '/about'
-    // }, {
-    //     label: 'contacto',
-    //     route: '/contacto'
-    // },
-]
+export const Sections = [
+    {
+      label: "Inicio",
+      route: "/",
+    },
+    {
+      label: "Episodios",
+      route: "/episodios",
+    },
+    {
+      label: "Sobre Nosotros",
+      route: "/nosotros",
+    },
+    {
+      label: "Contacto",
+      route: "/contacto",
+    },
+  ]
+  
