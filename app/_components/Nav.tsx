@@ -5,12 +5,10 @@ import { Sections } from "../lib/constants"
 
 export default function Nav() {
     const pathname = usePathname()
+    if (Sections.length === 0) return null
 
     return (
-        <nav className="max-w-72 mx-auto md:max-w-md lg:max-w-xl xl:max-w-2xl">
-            <Link href="/">
-                <img src="./logo.png" alt="logo" className="dark:invert"/>
-            </Link>
+        <nav className="">
             <ul>
                 {Sections.map(({ label, route }) => {
                     const isActive = pathname.startsWith(route)
