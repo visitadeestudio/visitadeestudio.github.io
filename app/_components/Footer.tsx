@@ -2,13 +2,14 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="py-12">
+    <footer className="w-full py-6 text-sm text-center text-gray-600">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="flex flex-col items-center">
             <div className="flex space-x-4 mb-4">
               <Link
                 href="https://www.instagram.com/visitadeestudiojal/"
+                target="_blank"
                 className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
@@ -18,7 +19,7 @@ export default function Footer() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="1"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
@@ -28,9 +29,10 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Instagram</span>
               </Link>
-              
+
               <Link
                 href="https://open.spotify.com/show/6x31Q1nsmDUHzahoi0pzQW"
+                target="_blank"
                 className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
@@ -40,7 +42,7 @@ export default function Footer() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="1"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
@@ -53,6 +55,7 @@ export default function Footer() {
               </Link>
               <Link
                 href="https://www.youtube.com/@VisitaDeEstudio"
+                target="_blank"
                 className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
@@ -62,7 +65,7 @@ export default function Footer() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="1"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
