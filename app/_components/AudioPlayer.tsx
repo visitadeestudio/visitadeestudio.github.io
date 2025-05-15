@@ -87,7 +87,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc, title = "Trailer Te
   }
 
   return (
-    <div className="w-full max-w-xl bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-800">
+    <div className="w-full max-w-xl shadow-lg p-6 border border-gray-600">
       <h2 className="text-xl font-bold mb-4 text-center">{title}</h2>
 
       <audio ref={audioRef} src={audioSrc} preload="metadata" />
@@ -95,7 +95,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc, title = "Trailer Te
       <div className="flex items-center justify-center mb-4">
         <button
           onClick={togglePlay}
-          className="w-12 h-12 flex items-center justify-center bg-black dark:bg-white text-white dark:text-black rounded-full hover:opacity-90 transition-opacity"
+          className="w-12 h-12 flex items-center justify-center bg-black text-white rounded-full hover:opacity-90 transition-opacity"
           aria-label={isPlaying ? "Pausar" : "Reproducir"}
         >
           {isPlaying ? (
@@ -119,7 +119,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc, title = "Trailer Te
           max={duration || 0}
           value={currentTime}
           onChange={handleSeek}
-          className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:dark:bg-white"
+          className="w-full h-2 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black"
         />
         <span className="text-sm font-mono">{formatTime(duration)}</span>
       </div>
@@ -127,7 +127,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc, title = "Trailer Te
       <div className="flex items-center space-x-2">
         <button
           onClick={toggleMute}
-          className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+          className="text-gray-700 hover:text-black "
           aria-label={isMuted ? "Activar sonido" : "Silenciar"}
         >
           {isMuted ? (
@@ -152,7 +152,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioSrc, title = "Trailer Te
           step="0.01"
           value={volume}
           onChange={handleVolumeChange}
-          className="w-24 h-2 bg-gray-200 dark:bg-gray-700 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black [&::-webkit-slider-thumb]:dark:bg-white"
+          className="w-24 h-2 bg-gray-200 rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-black "
         />
       </div>
     </div>
