@@ -2,21 +2,14 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 py-12">
+    <footer className="py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Visita de Estudio</h3>
-            <p className="text-gray-600 dark:text-gray-400 max-w-md">
-              Un podcast dedicado a difundir el trabajo de artistas mexicanxs a través de conversaciones íntimas.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center md:items-end">
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="flex flex-col items-center">
             <div className="flex space-x-4 mb-4">
               <Link
-                href="https://instagram.com"
-                className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+                href="https://www.instagram.com/visitadeestudiojal/"
+                className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,28 +28,10 @@ export default function Footer() {
                 </svg>
                 <span className="sr-only">Instagram</span>
               </Link>
+              
               <Link
-                href="https://twitter.com"
-                className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="https://spotify.com"
-                className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+                href="https://open.spotify.com/show/6x31Q1nsmDUHzahoi0pzQW"
+                className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +52,8 @@ export default function Footer() {
                 <span className="sr-only">Spotify</span>
               </Link>
               <Link
-                href="https://youtube.com"
-                className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+                href="https://www.youtube.com/@VisitaDeEstudio"
+                className="text-gray-600 hover:text-black transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,8 +73,8 @@ export default function Footer() {
               </Link>
             </div>
 
-            <p className="text-sm text-gray-500 dark:text-gray-500">
-              &copy; {new Date().getFullYear()} Visita de Estudio. Todos los derechos reservados.
+            <p className="text-sm text-gray-500">
+              &copy; {new Date().getFullYear()} Visita de Estudio.
             </p>
           </div>
         </div>

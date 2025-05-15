@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Nav from "./Nav"
 import Image from "next/image"
 
 export default function Header() {
@@ -10,7 +9,6 @@ export default function Header() {
           <Link href="/" className="relative w-full max-w-[280px] md:max-w-[320px] mx-auto">
             <Image src="/logo.png" alt="Visita de estudio" width={320} height={80} className="" priority />
           </Link>
-          {/* <Nav /> */}
         </div>
       </div>
     </header>
